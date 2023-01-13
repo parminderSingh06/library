@@ -6,14 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Serif Toto&effect=3d">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="header">
-
+    <div id="overlay"></div>
+    <div id="formDiv">
+        <form id="bkForm">
+            <label for="bookName">
+                BOOK NAME
+                <input type="text" id="bookName" name="bookName" required>
+            </label>
+            <label for="author">
+                AUTHOR
+                <input type="text" id="author" name="author" required>
+            </label>
+            <label for="bookPages">
+                BOOK PAGES
+                <input type="number" id="bookPages" name="bookPages">
+            </label>
+            <label for="pagesRead">
+                PAGES READ
+                <input type="number" id="pagesRead" name="pagesRead">
+            </label>
+            <button type="submit" id="subBtn">ADD BOOK</button>
+        </form>
     </div>
-    <div class="library">
-
+    <div class="header">
+        <div class="entry">
+            <h1 class="font-effect-3d">LIBRARY</h1>
+            <button id="new" type="button">NEW BOOK</button>
+        </div>
+    </div>
+    <div class="center">
+        <div class="library">
+        </div>
     </div>
     <div class="footer">
         
