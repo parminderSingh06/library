@@ -28,6 +28,7 @@
             <label for="pagesRead">
                 PAGES READ
                 <input type="number" id="pagesRead" name="pagesRead">
+                <div id="errorPR"></div>
             </label>
             <button type="submit" id="subBtn">ADD BOOK</button>
         </form>
@@ -44,6 +45,12 @@
     </div>
     <div class="footer">
         
+    </div>
+    <div class="editDiv">
+        NEW PAGES READ
+        <input type="number" id="editPR">
+        <div id="errorPG"></div>
+        <button id="editSubmit" onclick="editPages()">SUBMIT</button>
     </div>
 </body>
 </html>
